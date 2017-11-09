@@ -30,6 +30,11 @@
 		<label for="password">Password</label>
 		<input type="password" id="password" name="password"/>	
 	</p>
+	
+	<p>
+		Remember Me : <input type="checkbox" name="_spring_security_remember_me" value="true"/>
+	</p>
+	
 	<%-- <input type="hidden"                        
 		name="${_csrf.parameterName}"
 		value="${_csrf.token}"/> --%>
