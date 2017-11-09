@@ -9,20 +9,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+user
 
-index<br>
-
-<a href="/admin">어드민</a><br>
-<a href="/user">유저</a><br>
-<a href="/registrationForm">회원가입</a><br>
-
-<sec:authorize access="isAnonymous()">
-<br>로그아웃 중
-</sec:authorize>
-
-<sec:authorize access="isAuthenticated()">
-<br>로그인 중
-</sec:authorize>
+<sec:authentication property="principal.username"/>님 안녕하세요
 
 <c:url var="logoutUrl" value="/logout"/>
 <form action="${logoutUrl}"

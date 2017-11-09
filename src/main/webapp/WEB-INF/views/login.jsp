@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<a href="/">인덱스이동</a><br>
 
 <c:url value="/login" var="loginUrl"/>
 <form action="${loginUrl}" method="post">       
